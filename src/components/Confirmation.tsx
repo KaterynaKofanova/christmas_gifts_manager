@@ -1,6 +1,6 @@
 import React from "react";
 import { cart } from "../types";
-import {capitalizeFirstLetter} from '../utils'
+import { capitalizeFirstLetter } from "../utils";
 
 interface ConfirmationProps {
   carts: cart[];

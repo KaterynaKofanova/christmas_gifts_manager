@@ -1,6 +1,6 @@
 import React from "react";
 import { cart, name } from "../types";
-import {capitalizeFirstLetter, checkDiscount} from '../utils'
+import { capitalizeFirstLetter, checkDiscount } from "../utils";
 
 interface CartProps {
   cart: cart;
@@ -8,8 +8,6 @@ interface CartProps {
   carts: cart[];
   setDiscount: (discount: number) => void;
 }
-
-
 
 const Cart: React.FC<CartProps> = ({ cart, setCarts, carts, setDiscount }) => {
   const handleQuantityChange = (
@@ -37,7 +35,6 @@ const Cart: React.FC<CartProps> = ({ cart, setCarts, carts, setDiscount }) => {
       setDiscount(discount);
     }
   };
-
 
   const totalPrice: number = cart.products.reduce(
     (acc, val) => acc + val.price * val.approvedQuantity,

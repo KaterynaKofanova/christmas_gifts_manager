@@ -70,7 +70,7 @@ const AllCarts: React.FC<AllCartsProps> = ({
         <div className="allCarts">
           {instructions ? (
             <div className="instructions">
-                <p>Welcome to Droppe Xmas!</p>
+              <p>Welcome to Droppe Xmas!</p>
               <p>
                 Here you can see all your children's wishlists for Christmas
                 gifts.
@@ -82,7 +82,9 @@ const AllCarts: React.FC<AllCartsProps> = ({
                 <br /> 20% if it is approved in 2 lists, 30% if in 3 lists and
                 so on.
               </p>
-              <p>You can see your current discount on the botton of the page.</p>
+              <p>
+                You can see your current discount on the botton of the page.
+              </p>
               <button onClick={() => setInstructions(false)}>Close</button>
             </div>
           ) : (
