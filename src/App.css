@@ -151,7 +151,7 @@ input[type=number]{
   margin: 2rem 1rem;
 }
 
-#btn-save, button{
+button{
   padding: 0.5em 2em;
   font-size: 1.2rem;
   align-self: center;
@@ -159,6 +159,10 @@ input[type=number]{
   background-color: #165B33;
   color: white;
   border-radius: 20px;
+}
+
+button:hover{
+  background-color: #338154;
 }
 
 .confirmation{

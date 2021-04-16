@@ -61,6 +61,11 @@ const App: React.FC = () => {
     fetchCarts();
   }, []);
 
+  useEffect(()=> {
+    window.scrollTo(0,0)
+
+  }, [view])
+
   const totalPrice: number = carts.reduce(
     (acc, val) =>
       acc +
