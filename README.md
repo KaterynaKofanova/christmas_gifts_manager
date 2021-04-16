@@ -1,4 +1,4 @@
-# Droppe Xmas app 
+# Wishlists app 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,6 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 To run tests :
 ### `npm test`
 
+## ALso available live demo:
 
+[Here](https://katerynakofanova.github.io/task_submission/)
 
 
