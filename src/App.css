@@ -1,38 +1,224 @@
-.App {
+/* .App {
+  text-align: center;
+  align-content: center;
+} */
+
+.loader {
+  margin-top:10%;
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #165B33;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+}
+.allCarts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.instructions{
+  margin: 1% auto;
+  width: 70%;
+  text-align: center;
+  background-color: white;
+}
+
+.header{
+  height: 4em;
+  background-color: rgba(224, 31, 34, 0.9);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content{
+  margin-top:4em;
+  background-image: url('https://cdn.pixabay.com/photo/2015/12/06/20/10/christmas-bauble-1079926_1280.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+  min-height: 90vh;
+} 
+
+.cart {
+  margin: 1% auto;
+  min-width: 70%;
+  border-style: solid;
+  border-width:5px; 
+  border-color: #e01f22;
+  border-radius: 20px;
+  padding: 1.5em;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cart-total{
+  margin-right:20%;
+  margin-top: 1em;
+  text-align: right; 
+  font-size: 1.2rem;
+  color:#165B33;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart h3{
+  color: #165B33;
+}
+
+.cart table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cart table td,
+.cart table th
+{
+    text-align:left;
+}
+
+.cart table td + td,
+.cart table th + th
+{
+    text-align:center
+}
+
+.cart table td + td +td +td,
+.cart table th + th + th + th
+{
+    color:#165B33
+}
+
+
+.col1{
+  width: 40%;
+}
+
+.col2{
+  width: 10%;
+}
+
+.col3{
+  width: 10%;
+}
+.col4{
+  width: 15%;
+}
+
+input[type=number]{
+  width: 7ch;
+  text-align: center;
+  color:#165B33;
+  font-size: 1.1rem;
+}
+
+.totals{
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.totals div{
+  margin: 2rem 1rem;
+}
+
+#btn-save, button{
+  padding: 0.5em 2em;
+  font-size: 1.2rem;
+  align-self: center;
+  margin-bottom: 3vh;
+  background-color: #165B33;
+  color: white;
+  border-radius: 20px;
+}
+
+.confirmation{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.confirm-cart{
+  margin: 0 auto;
+  min-width: 80%;
+  background-color: white;
+  padding: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.confirm-cart table{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.confirm-cart table td,
+.confirm-cart table th
+{
+    text-align:left;
+}
+
+.confirm-cart table td + td,
+.confirm-cart table th + th
+{
+    text-align:center;
+    color:#e01f22;
+}
+
+.confirm-cart table td + td +td,
+.confirm-cart table th + th +th
+{
+    text-align:center;
+    color:#165B33;
+}
+
+.confirm-cart table td + td +td +td,
+.confirm-cart table th + th +th +th
+{
+    text-align:center;
+    color:black;
+}
+
+.confirm-cart-totals{
+  font-weight: bold;
+}
+.confirmation p{
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: #165B33;
+  text-decoration-thickness: 0.1em;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  font-weight: bold;
 }
