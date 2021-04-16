@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 To run tests :
 ### `npm test`
 
-## ALso available live demo:
+## Also available live demo:
 
 [Here](https://katerynakofanova.github.io/task_submission/)
 
