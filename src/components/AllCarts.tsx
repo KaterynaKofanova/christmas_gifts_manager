@@ -70,7 +70,7 @@ const AllCarts: React.FC<AllCartsProps> = ({
         <div className="allCarts">
           {instructions ? (
             <div className="instructions">
-              <p>Welcome to Droppe Xmas!</p>
+              <p>Welcome to Christmas Gifts Manager!</p>
               <p>
                 Here you can see all your children's wishlists for Christmas
                 gifts.

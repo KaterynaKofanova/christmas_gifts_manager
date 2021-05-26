@@ -80,7 +80,7 @@ const App: React.FC = () => {
     <div className="App">
       <div className="header">
         <h2 className="header-content">
-          <FaGifts /> Droppe Xmas <FaTree />
+          <FaGifts /> Christmas Gifts Manager <FaTree />
         </h2>
       </div>
       <div className="content">
